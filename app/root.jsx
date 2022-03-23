@@ -26,7 +26,7 @@ export function links() {
 
 export default function App() {
   return (
-    <html lang="en" style={{fontSize: '18px'}}>
+    <html lang="en" style={{fontSize: '20px'}}>
       <head>
         <meta charSet="utf-8" />
         <meta name="viewport" content="width=device-width,initial-scale=1" />
