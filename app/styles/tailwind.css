@@ -1405,6 +1405,11 @@ Ensure the default browser behavior of the `hidden` attribute.
     line-height: 1;
   }
 
+  .lg\:text-8xl {
+    font-size: 6rem;
+    line-height: 1;
+  }
+
   .lg\:leading-6 {
     line-height: 1.5rem;
   }
