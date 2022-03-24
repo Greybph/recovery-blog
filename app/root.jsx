@@ -39,7 +39,6 @@ export default function App() {
       <body className="overflow-x-hidden">
         <NavBar />
         <Outlet />
-        <Footer />
         <ScrollRestoration />
         <Scripts />
         <LiveReload />
