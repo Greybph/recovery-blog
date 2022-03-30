@@ -7,9 +7,8 @@ import {
   ScrollRestoration,
 } from "remix";
 import tailwindUrl from './styles/tailwind.css'
-import NavBar from "./components/NavBar"
+import NavBar from "./components/navigation/NavBar"
 import favicon from '../app/favicon.jpg'
-import Footer from './components/Footer'
 
 export function meta() {
   return { 

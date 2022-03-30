@@ -10,10 +10,10 @@ export const meta = () => {
 
 export default function Index() {
   return (
-    <main className='overflow-x-hidden'>
+    <div className='overflow-x-hidden'>
       <Hero />
-      <ContentBreak />
-      <RecentPostsSection />
-    </main>
+      {/* <ContentBreak /> */}
+      {/* <RecentPostsSection /> */}
+    </div>
   )
 }
