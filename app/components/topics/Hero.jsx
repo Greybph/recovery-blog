@@ -1,7 +1,7 @@
-import React from 'react'
 import { Form } from 'remix'
 import emailIcon from '~/assets/emailIcon.svg'
 import {useState} from 'react'
+
 
 function Hero() {
   const [showInput, setShowInput] = useState(false)
@@ -27,8 +27,7 @@ function Hero() {
         <p className='max-w-[250px] text-sm font-medium tracking-tighter'>Submit a topic and get a response from someone who understands your situation.</p>
       </div>
 
-      <Form method='post' data-netlify='true' name="topic-submissions" className='flex flex-col items-center justify-center w-3/4 space-y-2 tracking-tighter md:w-2/6 '>
-      <input type="hidden" name="topic-submissions" value="topic-submissions" />
+      <Form method='post' netlify name="topic-submissions" className='flex flex-col items-center justify-center w-3/4 space-y-2 tracking-tighter md:w-2/6 '>
         <div className='flex w-full'>
           <input
             id="topic-input"
