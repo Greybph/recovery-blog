@@ -28,6 +28,7 @@ function Hero() {
       </div>
 
       <Form method='post' data-netlify='true' name="topic-submissions" className='flex flex-col items-center justify-center w-3/4 space-y-2 tracking-tighter md:w-2/6 '>
+      <input type="hidden" name="topic-submissions" value="topic-submissions" />
         <div className='flex w-full'>
           <input
             id="topic-input"
