@@ -38,11 +38,11 @@ function NavBar() {
   }, [firstRender])
 
   return (
-    <nav className='absolute top-0 flex items-center justify-between w-full px-4 py-6 font-medium bg-transparent font-mont md:px-12 lg:px-28'>
+    <nav className='absolute top-0 z-10 flex items-center justify-between w-full px-4 py-6 font-medium font-mont md:px-12 lg:px-28 xl:px-32'>
       <Link to='/' className='z-10 text-2xl'>LOGO</Link>
       <ul className='hidden space-x-16 md:flex'>
         <li>
-          <Link to='/'>topics</Link>
+          <Link to='/topics'>topics</Link>
         </li>
         <li>
           <Link to='/blog'>blog</Link>
@@ -57,7 +57,7 @@ function NavBar() {
 
       <button
         id="nav-toggle"
-        className='z-10 md:hidden shadow bg-white bg-opacity-80 rounded p-2'
+        className='z-10 p-2 bg-white rounded shadow md:hidden bg-opacity-80'
         onClick={() => setShowNav(!showNav)}
       >
         {toggleIcon === 'close' ? 
@@ -74,7 +74,7 @@ function NavBar() {
         <MobileNavList />
       </div>
       
-      <ScrollNav />
+      
     </nav>
   )
 }

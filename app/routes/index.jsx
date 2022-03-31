@@ -1,6 +1,7 @@
 import Hero from "~/components/index/Hero"
 import RecentPostsSection from '~/components/index/RecentPostsSection'
 import ContentBreak from '~/components/index/ContentBreak'
+import StoriesSection from '~/components/index/StoriesSection'
 
 export const meta = () => {
   return {
@@ -13,7 +14,9 @@ export default function Index() {
     <div className='overflow-x-hidden'>
       <Hero />
       {/* <ContentBreak /> */}
-      {/* <RecentPostsSection /> */}
+      {/* <RecentPostsSection />
+      <StoriesSection />
+      <div className="h-screen"></div> */}
     </div>
   )
 }

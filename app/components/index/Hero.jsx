@@ -6,7 +6,7 @@ function Hero() {
 
 
   return (
-    <section style={{backgroundImage: `url('${heroBg}')`}} className="flex mb-20 md:mb-0 flex-col px-4 bg-white md:bg-blend-normal bg-cover pt-24 md:pt-28 lg:pt-32 md:bg-right lg:bg-right h-[90vh] xs:h-[65vh] md:h-[85vh] md:px-10 lg:px-20 xl:px-28 font-mont">
+    <section style={{backgroundImage: `url('${heroBg}')`}} className="flex mb-20 md:mb-0 flex-col px-4 bg-white md:bg-blend-normal bg-cover pt-24 md:pt-28 lg:pt-36 md:bg-right lg:bg-right h-[90vh] xs:h-[65vh] md:h-[85vh] md:px-10 lg:px-28 xl:px-32 font-mont">
       <span className='text-sm font-bold tracking-tighter md:text-base text-slate-900'>Drug Addiction & Recovery Blog</span>
       <span className='block text-2xl tracking-tight xs:text-4xl font-bold sm:text-5xl lg:text-[5rem] xl:text-[5.5rem] md:text-[3.9rem]'>
         Recovery <span className=''>Ocean</span>

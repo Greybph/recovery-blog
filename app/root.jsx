@@ -9,6 +9,7 @@ import {
 import tailwindUrl from './styles/tailwind.css'
 import NavBar from "./components/navigation/NavBar"
 import favicon from '../app/favicon.jpg'
+import ScrollNav from "./components/navigation/ScrollNav";
 
 export function meta() {
   return { 
@@ -37,6 +38,7 @@ export default function App() {
       </head>
       <body className="overflow-x-hidden">
         <NavBar />
+        <ScrollNav />
         <Outlet />
         <ScrollRestoration />
         <Scripts />
