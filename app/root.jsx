@@ -56,10 +56,10 @@ export function links() {
 }
 
 export const loader = async () => {
-  mongoose.connect(process.env.DATABASE_URI, {
-    useNewUrlParser: true,
-    useUnifiedTopology: true
-  })
+  // mongoose.connect(process.env.DATABASE_URI, {
+  //   useNewUrlParser: true,
+  //   useUnifiedTopology: true
+  // })
   return json({ gaTrackingId: process.env.GA_TRACKING_ID });
 }
 

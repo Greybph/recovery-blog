@@ -1,5 +1,5 @@
 import ContactForm from "../components/contact/ContactForm"
-import saveMessage from '~/utils/SaveMessage.server'
+import saveMessage from '~/utils/saveMessage.server'
 import { useActionData } from "remix"
 import {useEffect} from 'react'
 import heroAnimation from "~/utils/heroAnimation"
