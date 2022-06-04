@@ -1,44 +1,32 @@
 import { Link } from "remix"
 
-
 function Footer() {
   return (
-    <footer className="px-4 pt-14 font-mont h-1/2 md:px-10 lg:px-28 bg-slate-700">
-      <div className="flex justify-between pb-16 border-b-2 border-slate-600">
+    <footer className="px-4 pt-8 pb-12 md:pb-0 lg:py-14 font-mont md:px-10 lg:px-28 bg-slate-900">
+      <div className="flex flex-col items-center justify-between pb-6 space-y-2 border-b-2 md:space-y-6 border-slate-600">
         <div>
-          <span className="block mb-4 text-2xl font-bold text-sky-600">LOGO</span>
-          <p className="max-w-xs font-bold text-white">Drug addiction and recovery discussed</p>
+          <span className="block mb-1 text-xl font-medium text-center md:mb-2 md:text-3xl text-slate-100">Recovery Ocean</span>
+          <p className="mb-2 text-sm font-medium text-center text-slate-500 md:text-base md:mb-0">Drug addiction and recovery blog</p>
         </div>
 
-        <div className="flex flex-col space-y-1 text-sm font-medium">
-          <h4 className="mb-1 text-white">Learn</h4>
-          <Link className="text-slate-400" to='/'>Blog</Link>
-          <Link className="text-slate-400" to='/'>Blog</Link>
-          <Link className="text-slate-400" to='/'>Blog</Link>
+        <div className="flex items-center space-x-4 md:space-x-10">
+          <Link to='/' className='font-medium duration-100 text-slate-300 hover:text-slate-100'>
+            Home
+          </Link>
+          <Link to='/blog' className='font-medium duration-100 hover:text-slate-100 text-slate-300'>
+            Blog
+          </Link>
+          <Link to='/about' className='font-medium duration-100 hover:text-slate-100 text-slate-300'>
+            About
+          </Link>
+          <Link to='/contact' className='font-medium duration-100 hover:text-slate-100 text-slate-300'>
+            Contact
+          </Link>
         </div>
-        
-        <div className="flex flex-col space-y-1 text-sm font-medium">
-          <h4 className="mb-1 text-white">Learn</h4>
-          <Link className="text-slate-400" to='/'>Blog</Link>
-          <Link className="text-slate-400" to='/'>Blog</Link>
-          <Link className="text-slate-400" to='/'>Blog</Link>
-        </div>
-        
-        <div className="flex flex-col space-y-1 text-sm font-medium">
-          <h4 className="mb-1 text-white">Learn</h4>
-          <Link className="text-slate-400" to='/'>Blog</Link>
-          <Link className="text-slate-400" to='/'>Blog</Link>
-          <Link className="text-slate-400" to='/'>Blog</Link>
-        </div>
+
       </div>
 
-      <div className="flex justify-between py-8 text-xs text-slate-400">
-        <span>© Recover is possible</span>
-        <div className="space-x-2">
-          <span>Terms of Service</span>
-          <span>Privacy Notice</span>
-        </div>
-      </div>
+
     </footer>
   )
 }

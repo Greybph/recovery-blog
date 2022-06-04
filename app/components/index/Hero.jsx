@@ -1,21 +1,20 @@
-import {Link} from 'remix'
-import {CgChevronRight} from 'react-icons/cg'
-import heroBg from '~/assets/heroBg4.jpg'
+import heroBg from '~/assets/indexHeroBg.jpg'
+import {useEffect} from 'react'
+import heroAnimation from '~/utils/heroAnimation'
 
-function Hero() {
-
+function Hero() {  
+ useEffect(() => {
+  heroAnimation('#index-hero-titles', '#index-hero-paragraph')
+ }, [])
 
   return (
-    <section style={{backgroundImage: `url('${heroBg}')`}} className="flex mb-20 md:mb-0 flex-col px-4 bg-white md:bg-blend-normal bg-cover pt-24 md:pt-28 lg:pt-36 md:bg-right lg:bg-right h-[90vh] xs:h-[65vh] md:h-[85vh] md:px-10 lg:px-28 xl:px-32 font-mont">
-      <span className='text-sm font-bold tracking-tighter md:text-base text-slate-900'>Drug Addiction & Recovery Blog</span>
-      <span className='block text-2xl tracking-tight xs:text-4xl font-bold sm:text-5xl lg:text-[5rem] xl:text-[5.5rem] md:text-[3.9rem]'>
-        Recovery <span className=''>Ocean</span>
-      </span>
-      <p className='ml-1 md:max-w-[45rem] pt-5 text-xs font-medium leading-7 md:leading-9 md:text-xl'>If you or your loved one is drowning in drug addiction, it is not too late. People have beaten this disease. You can too.</p>
-      <Link className='flex items-center px-3 py-2 mt-8 text-sm font-bold border-2 border-black group w-fit' to='/'>
-        Find out how
-        <CgChevronRight className='ml-3 text-xl duration-300 group-hover:scale-125 group-hover:mr-4 group-hover:translate-x-4'/>
-      </Link>
+    <section style={{backgroundColor: '#f1f2f4', backgroundImage: `url('${heroBg}')`}} className="mb-20 md:mb-0 flex-col flex justify-center md:block px-4 md:bg-blend-normal bg-cover md:pt-40 lg:pt-36 md:bg-right h-[85vh] xs:h-[65vh] md:h-[85vh] md:px-10 lg:px-28 xl:px-32 font-mont bg-fixed lg:bg-local">
+      <span className='hidden'>Image by Jean Gerber on Unsplash</span>
+      <div id="index-hero-titles" className='opacity-0'>
+        <span className='block text-center md:text-left font-bold text-3xl lg:text-[4.5rem] md:text-[3rem]'>Recovery Ocean</span>
+        <h1 className="mt-2 text-lg font-medium tracking-tight text-center lg:mb-1 md:mt-6 md:text-left md:text-3xl">Drug Addiction & Recovery Blog</h1>
+      </div>
+      <p id="index-hero-paragraph" className='pt-5 ml-1 text-sm font-medium leading-7 text-center opacity-0 md:max-w-2xl md:leading-10 md:text-xl md:text-left'>Raw stories, advice, and lessons learned from drug addiction. Focused on helping addicts and their families better understand this disease.</p>
     </section>
   )
 }

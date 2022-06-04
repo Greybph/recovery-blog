@@ -1,11 +1,20 @@
+import { Link } from "remix"
 
-function MobileNavList() {
+function MobileNavList({onClick}) {
   return (
-    <ul className="flex flex-col items-center justify-center px-20 py-20 space-y-4 font-mont">
-      <li className="nav-item">Topics</li>
-      <li className="nav-item">Blog</li>
-      <li className="nav-item">Resources</li>
-      <li className="nav-item">Stories</li>
+    <ul className="flex flex-col items-center justify-center px-20 pt-20 pb-10 space-y-4 shadow font-mont">
+      <li className="nav-item">
+        <Link to='/' onClick={onClick}>Home</Link>
+      </li>
+      <li className="nav-item">
+        <Link to='/posts' onClick={onClick}>Blog</Link>
+      </li>
+      <li className="nav-item">
+        <Link to='/about' onClick={onClick}>About</Link>
+      </li>
+      <li className="nav-item">
+        <Link to='/contact' onClick={onClick}>Contact</Link>
+      </li>
     </ul>
   )
 }
