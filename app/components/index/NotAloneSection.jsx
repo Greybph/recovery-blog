@@ -58,7 +58,7 @@ function NotAloneSection() {
       <div id="not-alone-section-text" className="text-white bg-black rounded-md lg:w-3/5 lg:px-16 lg:py-44 xl:px-40 xl:py-60 font-mont">
         <span className='block mb-1 text-2xl font-bold md:text-4xl md:mb-2 lg:mb-2 lg:text-5xl xl:text-6xl whitespace-nowrap'>You're Not Alone</span>
         <p className="mb-8 text-xs font-medium leading-6 max-w-none sm:max-w-md md:max-w-xl md:leading-10 lg:leading-6 md:text-xl lg:text-base xl:text-base md:mb-14 lg:mb-0 lg:max-w-lg xl:leading-7">Drug addiction affects millions of families around the world. This disease doesn't discriminate; anybody can become dependent on drugs.</p>
-        <Form action='/posts/addiction' method='post'>
+        <Form action='/posts/addiction' method='get'>
           <input type="hidden" name="_action" value="category" />
           <button type='submit' name='category' value='addiction' className={`${showLoading ? "animate-bounce" : ''} py-2 mt-4 lg:mt-10 text-lg font-medium text-white duration-300 bg-black border-4 border-white rounded-md w-44 md:w-52 lg:w-60 md:py-4 md:text-2xl hover:bg-white hover:text-black`}
           >

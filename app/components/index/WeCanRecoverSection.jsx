@@ -59,7 +59,7 @@ function WeCanRecoverSection({image}) {
       <div id="we-can-recover-text" className="text-slate-900 bg-slate-200 rounded-md lg:w-3/5 lg:px-16 lg:py-44 xl:px-40 xl:py-60 font-mont">
         <span className='block mb-1 text-2xl font-bold md:text-4xl md:mb-2 lg:mb-2 lg:text-5xl xl:text-6xl slate-900 whitespace-nowrap'>We Can Recover</span>
         <p className="mb-8 text-xs font-medium leading-6 max-w-none md:max-w-xl md:leading-10 lg:leading-6 md:text-xl lg:text-base xl:text-base md:mb-14 lg:mb-0 lg:max-w-lg xl:leading-7">No matter how dark things may seem for you or your loved one, recovery is possible. People do beat this disease and get their lives back.</p>
-        <Form action='/posts/recovery' method='post'>
+        <Form action='/posts/recovery' method='get'>
           <input type="hidden" name="_action" value='category' />
           <button type='submit' name="category" value="recovery" className={`${showLoading ? 'animate-bounce' : ''} py-2 mt-4 lg:mt-10 text-lg font-medium text-slate-900 duration-200 bg-slate-200 border-4 border-slate-900 rounded-md md:py-4 md:text-2xl w-44 md:w-56 lg:w-60 hover:bg-slate-900 hover:text-slate-200`}>
             {showLoading ? "Loading..." : "Find out how"}
