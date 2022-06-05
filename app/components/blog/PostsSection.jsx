@@ -3,7 +3,7 @@ import postDex from '~/postDex'
 import {useState, useEffect} from 'react'
 import {gsap} from 'gsap'
 
-function PostsSection({filter = "all"}) {
+function PostsSection({filter= "all"}) {
   const [category, setCategory] = useState(filter)
 
   useEffect(() => {
