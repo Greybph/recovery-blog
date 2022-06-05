@@ -8,7 +8,7 @@ function EndCTA({idxs}) {
   const slug = useLocation().pathname
   
   return (
-    <section className="pt-12 -mb-10 border-t md:pt-20 md:-mb-0 not-prose">
+    <section className="px-4 pt-12 -mb-10 border-t md:pt-20 md:-mb-0 not-prose md:px-0">
       <span className="block mb-4 text-4xl font-bold">Don't stop now!</span>
       <p className="text-lg ">Check out these posts for more insight into drug addiction and recovery.</p>
       
