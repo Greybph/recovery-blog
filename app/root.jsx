@@ -59,7 +59,7 @@ export function ErrorBoundary() {
       <body>
         <NavBar />
         <ScrollNav />
-        <ErrorPage />
+        <ErrorPage error={true}/>
         <Footer />
         <Scripts />
       </body>

@@ -1,9 +1,9 @@
 import Messages from '~/models/Messages.server'
 
-export default function saveMessage(values) {
+export default async function saveMessage(values) {
   if (values.birthdate) return null
 
-  Messages.create({
+  await Messages.create({
     name: values.name,
     email: values.email,
     subject: values.subject,
