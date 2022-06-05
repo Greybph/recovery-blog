@@ -19,13 +19,13 @@ import mongoose from '~/utils/mongoose.server'
 import * as gtag from "~/utils/gtags.client"
 import ErrorPage from '~/components/ErrorPage'
 
-mongoose.connect(process.env.DATABASE_URI, {
-  useNewUrlParser: true,
-  useUnifiedTopology: true
-}, (error) => {
-  if (!error) return console.info("Mongo Connected")
-  console.error(error)
-})
+// mongoose.connect(process.env.DATABASE_URI, {
+//   useNewUrlParser: true,
+//   useUnifiedTopology: true
+// }, (error) => {
+//   if (!error) return console.info("Mongo Connected")
+//   console.error(error)
+// })
 
 export function meta() {
   return { 
