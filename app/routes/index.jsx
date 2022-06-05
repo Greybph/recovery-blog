@@ -6,6 +6,7 @@ import WeCanRecoverSection from '~/components/index/WeCanRecoverSection'
 import NotAloneSection from '~/components/index/NotAloneSection'
 import AskMeSection from '~/components/blog/AskMeSection'
 import image from '~/assets/hopeful-man-in-nature.jpg'
+import submitQuestion from '~/utils/submitQuestion.server'
 
 export const meta = () => {
   return {
@@ -21,6 +22,18 @@ export const links = () => {
   return [
     {rel: "preload", as: "image", href: image}
   ]
+}
+
+export async function action({request}) {
+  const formData = await request.formData()
+  const {_action, ...values} = Object.fromEntries(formData)
+
+  switch (_action) {
+    case "question":
+      return submitQuestion(values)
+    default:
+      return null
+  }
 }
 
 export default function Index() {

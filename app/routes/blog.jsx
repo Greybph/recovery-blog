@@ -3,6 +3,8 @@ import SubscribePopup from '~/components/SubscribePopup'
 import AskMeSection from '../components/blog/AskMeSection'
 import subscribeUser from '../utils/subscribeUser.server'
 import EndCTA from '../components/blog/EndCTA'
+import submitQuestion from '~/utils/submitQuestion.server'
+
 
 export const meta = () => {
   return {
@@ -22,6 +24,8 @@ export async function action({request}){
   switch (_action) {
     case "subscribe":
       return subscribeUser(values)
+    case "question":
+      return submitQuestion(values)
       default:
         return null
       }

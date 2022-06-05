@@ -30,7 +30,7 @@ function AskMeSection() {
         <span className='block text-2xl font-bold text-center text-slate-900 md:text-4xl lg:text-5xl lg:whitespace-nowrap'>Ask an Addict</span>
         <p className='mt-2 text-sm font-medium leading-7 text-center text-slate-600 md:leading-10 md:text-2xl '>Have questions about drug addiction or recovery?</p>
       </div>
-      <Form action="/posts" method='post' className='flex flex-col w-full space-y-4 lg:w-2/5'>
+      <Form method='post' className='flex flex-col w-full space-y-4 lg:w-2/5'>
         <input type="hidden" name="_action" value="question" />
         <input 
           type="text" required name="question" placeholder='Your question'
