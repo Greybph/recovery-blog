@@ -40,8 +40,8 @@ export async function action({request}){
       <div className='flex items-center justify-center pb-20'>
         <EndCTA idxs={idxs} />
       </div>
-      <SubscribePopup />
-      <AskMeSection />
+      {/* <SubscribePopup /> */}
+      {/* <AskMeSection /> */}
     </>
   )
 }

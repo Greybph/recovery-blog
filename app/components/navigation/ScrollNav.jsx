@@ -49,9 +49,9 @@ function ScrollNav() {
           <li className='relative'>
             <Link className={`${transition?.location?.pathname === '/about' ? 'animate-pulse' : ''} font-medium text-lg after:content-[''] after:bg-black after:absolute after:bottom-0 after:left-0 after:h-[2px] after:w-full after:scale-x-0 hover:after:scale-x-100 after:duration-200 after:origin-bottom-left`}  to='/about'>About</Link>
           </li>
-          <li className='relative'>
+          {/* <li className='relative'>
             <Link className={`${transition?.location?.pathname === '/contact' ? 'animate-pulse' : ''} font-medium text-lg after:content-[''] after:bg-black after:absolute after:bottom-0 after:left-0 after:h-[2px] after:w-full after:scale-x-0 hover:after:scale-x-100 after:duration-200 after:origin-bottom-left`}  to='/contact'>Contact</Link>
-          </li>
+          </li> */}
         </ul>
       </div>
     )
