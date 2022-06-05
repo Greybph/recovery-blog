@@ -45,7 +45,7 @@ export async function action({request}){
         <EndCTA idxs={idxs} />
       </div>
       <SubscribePopup />
-      <AskMeSection />
+      {/* <AskMeSection /> */}
     </>
   )
 }
