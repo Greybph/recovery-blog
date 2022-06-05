@@ -48,6 +48,25 @@ export function CatchBoundary() {
   )
 }
 
+export function ErrorBoundary() {
+  return (
+    <html>
+      <head>
+        <title>Oh no!</title>
+        <Meta />
+        <Links />
+      </head>
+      <body>
+        <NavBar />
+        <ScrollNav />
+        <ErrorPage />
+        <Footer />
+        <Scripts />
+      </body>
+    </html>
+  )
+}
+
 export function links() {
   return [
     {rel: 'stylesheet', href: tailwindUrl},
