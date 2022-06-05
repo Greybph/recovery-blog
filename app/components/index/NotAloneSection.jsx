@@ -12,7 +12,7 @@ function NotAloneSection() {
 
   useEffect(() => {
     let timeout
-    if (transition?.location?.pathname === '/posts/addiction') {
+    if (transition?.location?.pathname === '/posts') {
       timeout = setTimeout(() => setShowLoading(true), 300)
     }
     return () => clearTimeout(timeout)
