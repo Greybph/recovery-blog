@@ -1,7 +1,6 @@
 import Messages from '~/models/Messages.server'
 
-export default function saveMessage(data) {
-  let values = Object.fromEntries(data)
+export default function saveMessage(values) {
   if (values.birthdate) return null
 
   Messages.create({

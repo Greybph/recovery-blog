@@ -6,7 +6,8 @@ import heroAnimation from "~/utils/heroAnimation"
 
 export async function action({request}) {
   const formData = await request.formData()
-  return saveMessage(formData)
+  let values = Object.fromEntries(formData)
+  return saveMessage(values)
 }
 
 function ContactPage() {
