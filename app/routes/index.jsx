@@ -32,7 +32,7 @@ export default function Index() {
       <RecoveryTextSection />
       <WeCanRecoverSection image={image} />
       <RecentPostsSection />
-      {/* <AskMeSection /> */}
+      <AskMeSection />
     </div>
 
 

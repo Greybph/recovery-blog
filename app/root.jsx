@@ -19,6 +19,14 @@ import mongoose from '~/utils/mongoose.server'
 import * as gtag from "~/utils/gtags.client"
 import ErrorPage from '~/components/ErrorPage'
 
+mongoose.connect(process.env.DATABASE_URI, {
+  useNewUrlParser: true,
+  useUnifiedTopology: true
+}, (error) => {
+  if (!error) return console.info("Mongo Connected")
+  console.error(error)
+})
+
 export function meta() {
   return { 
     "theme-color": "#e2e8f0",
@@ -56,10 +64,6 @@ export function links() {
 }
 
 export const loader = async () => {
-  // mongoose.connect(process.env.DATABASE_URI, {
-  //   useNewUrlParser: true,
-  //   useUnifiedTopology: true
-  // })
   return json({ gaTrackingId: process.env.GA_TRACKING_ID });
 }
 
