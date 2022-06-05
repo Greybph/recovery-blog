@@ -60,7 +60,6 @@ export const loader = async () => {
   useNewUrlParser: true,
   useUnifiedTopology: true
 })
-
   return json({ gaTrackingId: process.env.GA_TRACKING_ID });
 }
 

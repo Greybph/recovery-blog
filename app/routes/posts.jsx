@@ -46,7 +46,7 @@ function PostsPage() {
       </div>
 
       <PostsSection filter={action?.category} />
-      {/* <AskMeSection /> */}
+      <AskMeSection />
     </section>
   )
 }
