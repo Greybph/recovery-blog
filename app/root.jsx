@@ -78,7 +78,7 @@ export const loader = async () => {
   mongoose.connect(process.env.DATABASE_URI, {
   useNewUrlParser: true,
   useUnifiedTopology: true
-})
+}).catch(err => console.error(`Unable to connect to mongodb instance. Error: ${err}`))
   return json({ gaTrackingId: process.env.GA_TRACKING_ID });
 }
 
