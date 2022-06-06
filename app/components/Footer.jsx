@@ -1,4 +1,5 @@
 import { Link } from "remix"
+import {BsFacebook} from 'react-icons/bs'
 
 function Footer() {
   return (
@@ -9,7 +10,7 @@ function Footer() {
           <p className="mb-2 text-sm font-medium text-center text-slate-500 md:text-base md:mb-0">Drug addiction and recovery blog</p>
         </div>
 
-        <div className="flex items-center space-x-4 md:space-x-10">
+        <div className="flex items-center justify-center space-x-4 md:space-x-10">
           <Link to='/' className='font-medium duration-100 text-slate-300 hover:text-slate-100'>
             Home
           </Link>
@@ -25,6 +26,12 @@ function Footer() {
         </div>
 
       </div>
+        <div className="flex items-center justify-center pt-4 md:pt-6">
+          <a href="https://www.facebook.com/RecoveryOcean"    
+            target="_blank" rel="noreferrer">
+            <BsFacebook className="text-3xl duration-100 hover:text-slate-100 text-slate-300" />
+          </a>
+        </div>
 
 
     </footer>

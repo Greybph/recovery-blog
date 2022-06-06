@@ -30,7 +30,9 @@ export function CatchBoundary() {
   return (
     <html>
       <head>
-      <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <meta charSet="utf-8" />
+        <meta name="viewport" content="width=device-width,initial-scale=1" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" />
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;500;600;700&display=swap" rel="stylesheet"></link>
         <title>Oops!</title>
@@ -52,7 +54,12 @@ export function ErrorBoundary() {
   return (
     <html>
       <head>
-        <title>Oh no!</title>
+        <meta charSet="utf-8" />
+        <meta name="viewport" content="width=device-width,initial-scale=1" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;500;600;700&display=swap" rel="stylesheet"></link>
+        <title>Oops!</title>
         <Meta />
         <Links />
       </head>
@@ -100,7 +107,6 @@ export default function App() {
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" />
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;500;600;700&display=swap" rel="stylesheet"></link>
-        <meta name="twitter:site" content="@_RecoveryOcean" />
         <meta name="robots" content="index, follow" />
         <meta name="googlebot" content="index, follow" />
         <meta name="bingbot" content="index, follow" />
