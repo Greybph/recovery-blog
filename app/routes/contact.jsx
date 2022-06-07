@@ -14,6 +14,9 @@ export const meta = () => {
   return {
     title: "Recovery Ocean Contact Page",
     description: "Use this page to send a message to Eric Anderson, creator of Recovery Ocean.",
+    'og:description': "Use this page to send a message to Eric Anderson, creator of Recovery Ocean.",
+    'og:image': "https://res.cloudinary.com/recovery-ocean/image/upload/v1654557644/recovery_ocean_home_image_ykkae9.png",
+    'og:url': 'https://www.recoveryocean.com/contact'
   }
 
 }

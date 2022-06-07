@@ -10,7 +10,7 @@ export const meta = () => {
   return {
     title: "Recovery Ocean Blog by Eric Anderson",
     description: "The Recovery Ocean blog features raw articles on drug addiction and recovery drawn from the experiences of Eric Anderson's eight years of heroin addiction.",
-    "og:description": "The Recovery Ocean blog features raw articles on drug addiction and recovery drawn from the experiences of my eight years of heroin addiction.",
+    "og:description": "The Recovery Ocean blog features raw articles on drug addiction and recovery drawn from my experiences during eight years of heroin addiction.",
     'og:image': "https://res.cloudinary.com/recovery-ocean/image/upload/v1654557644/recovery_ocean_home_image_ykkae9.png",
   }
 }

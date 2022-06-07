@@ -4,7 +4,7 @@ import AskMeSection from '../components/blog/AskMeSection'
 import subscribeUser from '../utils/subscribeUser.server'
 import EndCTA from '../components/blog/EndCTA'
 import submitQuestion from '~/utils/submitQuestion.server'
-
+import postDex from '~/postDex'
 
 export const meta = () => {
   return {
@@ -14,7 +14,12 @@ export const meta = () => {
 }
 
 export function loader() {
-  return [Math.floor(Math.random() * 3), Math.floor((Math.random() * 3) + 3)]
+  let dividedListLength = Math.floor(postDex.length / 2)
+
+  return [
+    Math.floor(Math.random() * dividedListLength),
+    Math.floor(Math.random() * (postDex.length/2)) + dividedListLength
+  ]
 }
 
 export async function action({request}){

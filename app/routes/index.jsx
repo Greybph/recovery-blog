@@ -14,6 +14,7 @@ export const meta = () => {
     description: "Raw stories, advice, and lessons learned from drug addiction. Focused on helping addicts and their families better understand this disease.",
     keywords: "Drug Addiction Blog, Recovery Blog, Drug Addiction Stories, Drug Addiction Awareness, Drug Addiction Recovery Awareness",
     author: "Eric Anderson",
+    'og:description': "Raw and unfiltered stories, advice, and lessons learned from drug addiction.",
     'og:image': "https://res.cloudinary.com/recovery-ocean/image/upload/v1654557644/recovery_ocean_home_image_ykkae9.png",
     "og:url": "https://www.recoveryocean.com"
   }
