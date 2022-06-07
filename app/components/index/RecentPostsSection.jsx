@@ -1,5 +1,4 @@
 import BlogPostCard from "~/components/blog/BlogPostCard"
-import hero from '~/assets/hero.jpg'
 import postDex from '~/postDex'
 import { Link, useTransition } from "remix"
 import {useEffect} from 'react'

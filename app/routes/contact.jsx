@@ -10,6 +10,14 @@ export async function action({request}) {
   return saveMessage(values)
 }
 
+export const meta = () => {
+  return {
+    title: "Recovery Ocean Contact Page",
+    description: "Use this page to send a message to Eric Anderson, creator of Recovery Ocean.",
+  }
+
+}
+
 function ContactPage() {
   const action = useActionData()
 

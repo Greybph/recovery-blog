@@ -7,7 +7,8 @@ import BioSection from '~/components/about/BioSection'
 export const meta = () => {
   return {
     title: "About Recovery Ocean",
-    description: "Drug addiction is a nightmare, but recovery is possible. Recovery Ocean for anyone whose been impacted by drug addiction."
+    description: "Recovery Ocean is a drug addiction and recovery blog. Get raw and unfiltered stories, advice, and lessons learned from my eight years in drug addiction.",
+    "og:image": "https://res.cloudinary.com/recovery-ocean/image/upload/v1654557644/recovery_ocean_home_image_ykkae9.png"
   }
 }
 
