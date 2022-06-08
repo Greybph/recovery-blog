@@ -44,6 +44,7 @@ function ContactForm() {
 
       <Recaptcha 
         sitekey="6LfrqVEgAAAAAJRh-4GEPyB28WD10VuL64Ye5VzG"
+        onloadCallback={() => console.log("reCaptcha Loaded")}
       />
      
       <button disabled={action?.sent || transition.submission} type="submit" className="py-3 font-medium text-white duration-300 rounded-md md:py-4 md:text-xl bg-slate-900 hover:bg-opacity-90">
