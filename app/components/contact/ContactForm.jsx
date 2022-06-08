@@ -1,11 +1,12 @@
 import {Form, useTransition, useActionData} from 'remix'
-import { useEffect } from 'react'
+import { useEffect, useState } from 'react'
 import FlashMessage from '~/components/utility/FlashMessage'
+import Recaptcha from 'react-recaptcha'
 
 function ContactForm() {
   const transition = useTransition()
   const action = useActionData()
-
+  
   useEffect(() => {
     const inputs = document.querySelectorAll('input')
     if (action?.sent) {
@@ -35,10 +36,20 @@ function ContactForm() {
           <span className='block font-bold text-center text-slate-900'>Message Sent!</span>
         </FlashMessage>
       }
+      {action?.needsVerification && 
+        <FlashMessage duration={5000}>
+          <span className='block font-bold text-center text-slate-900'>Please complete reCAPTCHA</span>
+        </FlashMessage>
+      }
 
+      <Recaptcha 
+        sitekey="6LfrqVEgAAAAAJRh-4GEPyB28WD10VuL64Ye5VzG"
+      />
+     
       <button disabled={action?.sent || transition.submission} type="submit" className="py-3 font-medium text-white duration-300 rounded-md md:py-4 md:text-xl bg-slate-900 hover:bg-opacity-90">
         {transition.submission ? "Sending..." : "Send Message"}
       </button>
+
     </Form>
   )
 }

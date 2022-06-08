@@ -110,7 +110,7 @@ export default function App() {
         <meta name="robots" content="index, follow" />
         <meta name="googlebot" content="index, follow" />
         <meta name="bingbot" content="index, follow" />
-        <Meta />
+        <script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit" async defer></script>        <Meta />
         <Links />
       </head>
       <body>

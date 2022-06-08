@@ -26,7 +26,7 @@ function PostsSection({filter= "all"}) {
   }, [category])
 
   return (
-    <main className='px-4 pb-4 md:pb-20 md:px-10 lg:px-28 xl:px-32'>
+    <main className='px-4 pb-20 md:px-10 lg:px-28 xl:px-32'>
       <div className="flex justify-center mb-8 space-x-4 text-sm md:mb-10 lg:justify-start font-mont">
         <button 
           id="cb-all"
