@@ -6,7 +6,7 @@ import heroAnimation from "~/utils/heroAnimation"
 export async function action({request}) {
   const formData = await request.formData()
   let recaptcha = formData.get('g-recaptcha-response')
-  let response = await fetch(`https://www.google.com/recaptcha/api/siteverify?secret=&response=${recaptcha}`, {method: 'POST'})
+  let response = await fetch(`https://www.google.com/recaptcha/api/siteverify?secret=${process.enc.RECAPTCHA_API_KEY}&response=${recaptcha}`, {method: 'POST'})
   let data = await response.json()
   
   if (data.success) {
