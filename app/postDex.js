@@ -85,14 +85,7 @@ const postDex = [
     to: "/blog/how-i-managed-to-stop-using-heroin",
     image: cover11,
   },
-  {
-    id: 12,
-    title: "Encountering Addicts From Our Past During Recovery",
-    description: "How to handle running into somebody you used to get high with.",
-    category: "recovery",
-    to: "/blog/encountering-addicts-from-our-past-during-recovery",
-    image: cover12,
-  },
+ 
 ]
 
 export default postDex
