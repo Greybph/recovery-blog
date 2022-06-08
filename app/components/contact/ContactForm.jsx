@@ -44,7 +44,7 @@ function ContactForm() {
 
       <div className="flex items-center justify-center w-full">
         <Recaptcha 
-          sitekey="6LfrqVEgAAAAAJRh-4GEPyB28WD10VuL64Ye5VzG"
+          sitekey="6LdHdlIgAAAAAOgOBoWR2yFwCkNIKz2ILEiuHhtp"
           onloadCallback={() => console.log("reCaptcha Loaded")}
         />
       </div>
