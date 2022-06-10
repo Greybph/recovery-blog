@@ -11,26 +11,29 @@ function Footer() {
         </div>
 
         <div className="flex items-center justify-center space-x-4 md:space-x-10">
-          <Link to='/' className='font-medium duration-100 text-slate-300 hover:text-slate-100'>
+          <Link to='/' className='font-medium duration-100 text-slate-300 hover:text-slate-100 hover:underline'>
             Home
           </Link>
-          <Link to='/blog' className='font-medium duration-100 hover:text-slate-100 text-slate-300'>
+          <Link to='/blog' className='font-medium duration-100 hover:text-slate-100 text-slate-300 hover:underline'>
             Blog
           </Link>
-          <Link to='/about' className='font-medium duration-100 hover:text-slate-100 text-slate-300'>
+          <Link to='/about' className='font-medium duration-100 hover:text-slate-100 text-slate-300 hover:underline'>
             About
           </Link>
-          <Link to='/contact' className='font-medium duration-100 hover:text-slate-100 text-slate-300'>
+          <Link to='/contact' className='font-medium duration-100 hover:text-slate-100 text-slate-300 hover:underline'>
             Contact
           </Link>
-        </div>
-
-      </div>
-        <div className="flex items-center justify-center pt-4 md:pt-6">
           <a href="https://www.facebook.com/RecoveryOcean"    
             target="_blank" rel="noreferrer">
             <BsFacebook className="text-3xl duration-100 hover:text-slate-100 text-slate-300" />
           </a>
+        </div>
+      </div>
+        <div className="flex flex-col items-center justify-center pt-6 space-y-2">
+          <Link to="/privacy-policy" className="text-slate-300 hover:text-slate-100 hover:underline">
+            Privacy Policy
+          </Link>
+          <p className="text-slate-500">© 2022 Eric Anderson</p>
         </div>
 
 
