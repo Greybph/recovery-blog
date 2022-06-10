@@ -17,6 +17,12 @@ export async function action({request}) {
   }
 }
 
+export const links = () => {
+  return [
+    {rel: "canonical", href: 'https://recoveryocean.com/contact'}
+  ]
+}
+
 export const meta = () => {
   return {
     title: "Recovery Ocean Contact Page",

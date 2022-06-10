@@ -5,6 +5,11 @@ import goToCategory from '~/utils/goToCategory'
 import { useActionData } from 'remix'
 import { useEffect } from 'react'
 
+export const links = () => {
+  return [
+    {rel: "canonical", href: 'https://recoveryocean.com/posts'}
+  ]
+}
 
 export const meta = () => {
   return {

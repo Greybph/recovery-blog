@@ -4,6 +4,12 @@ import MissionSection from '~/components/about/MissionSection'
 import CountDownSection from '~/components/about/CountDownSection'
 import BioSection from '~/components/about/BioSection'
 
+export const links = () => {
+  return [
+    {rel: "canonical", href: 'https://recoveryocean.com/about'}
+  ]
+}
+
 export const meta = () => {
   return {
     title: "About Recovery Ocean",

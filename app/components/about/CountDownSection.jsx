@@ -26,7 +26,6 @@ function CountDownSection() {
 
   useEffect(() => {
     const interval = setInterval(() => setTimeLeft(getTimeLeft()), 1000)
-
     return () => clearInterval(interval)
   }, [getTimeLeft])
   

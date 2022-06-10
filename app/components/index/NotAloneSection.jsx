@@ -33,7 +33,7 @@ function NotAloneSection() {
     })
     
     gsap.from('#not-alone-section-text', {
-      x: wide ? 100 : 50,
+      x: 50,
       scrollTrigger: {
         trigger: '#not-alone-section-text',
         scrub: tablet ? 1 :2,

@@ -22,7 +22,8 @@ export const meta = () => {
 
 export const links = () => {
   return [
-    {rel: "preload", as: "image", href: image}
+    {rel: "preload", as: "image", href: image},
+    {rel: "canonical", href: 'https://recoveryocean.com'},
   ]
 }
 
