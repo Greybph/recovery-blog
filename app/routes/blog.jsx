@@ -36,8 +36,8 @@ export async function action({request}){
       }
     }
     
-    function Blog() {
-      let idxs = useLoaderData()
+  function Blog() {
+    let idxs = useLoaderData()
 
   return (
     <>

@@ -43,7 +43,6 @@ export function CatchBoundary() {
         <NavBar />
         <ScrollNav />
         <ErrorPage />
-        <Footer />
         <Scripts />
       </body>
     </html>
@@ -67,7 +66,6 @@ export function ErrorBoundary() {
         <NavBar />
         <ScrollNav />
         <ErrorPage error={true}/>
-        <Footer />
         <Scripts />
       </body>
     </html>
