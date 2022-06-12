@@ -1,10 +1,10 @@
 import {Outlet, useLoaderData} from 'remix'
 import SubscribePopup from '~/components/SubscribePopup'
-import AskMeSection from '../components/blog/AskMeSection'
 import subscribeUser from '../utils/subscribeUser.server'
 import EndCTA from '../components/blog/EndCTA'
 import submitQuestion from '~/utils/submitQuestion.server'
 import postDex from '~/postDex'
+import PostAuthor from '../components/blog/PostAuthor'
 
 export const meta = () => {
   return {
@@ -44,13 +44,13 @@ export async function action({request}){
       <main className='justify-center px-4 md:px-0 md:flex lg:mt-20'>
         <article className='overflow-x-hidden prose py-28 prose-img:rounded-lg prose-a:text-blue-600 prose-slate lg:prose-xl'>
           <Outlet />
+          {/* <PostAuthor />  */}
         </article>
-      </main> 
-      <div className='flex items-center justify-center pb-20'>
+      </main>
+      <section className='flex items-center justify-center pb-20'>
         <EndCTA idxs={idxs} />
-      </div>
+      </section>
       <SubscribePopup />
-      {/* <AskMeSection /> */}
     </>
   )
 }

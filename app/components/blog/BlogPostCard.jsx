@@ -6,7 +6,7 @@ function BlogPostCard({post, onClick}) {
   const [showLoading, setShowLoading] = useState(false)
 
   return (
-    <article className='relative w-full flex flex-col border rounded-md shadow md:max-w-xs not-prose'>
+    <article className='relative flex flex-col w-full border rounded-md shadow md:max-w-xs not-prose'>
       <Link to={post.to}>
         <img
           className='object-cover w-full h-32 max-w-full aspect-auto md:h-24 lg:h-28 rounded-t-md hover:opacity-95' 
@@ -35,7 +35,7 @@ function BlogPostCard({post, onClick}) {
           <Link className="hover:underline" to={post.to}>{post.title}</Link>
         </h2>
         <p className='pb-16 text-sm font-medium leading-6 text-slate-700 lg:leading-7 lg:text-base'>{post.description}</p>
-        <Link to={post.to} className={`${post.category === 'recovery' ? 'bg-blue-500' : 'bg-red-500'} ${transition.state === "loading" && transition. location?.pathname === post.to ? 'animate-bounce' : ''} absolute bottom-3 right-3 px-4 py-2 text-xs font-medium text-white duration-100 hover:bg-opacity-90 rounded-md`}>
+        <Link to={post.to} className={`${post.category === 'recovery' ? 'bg-blue-500' : 'bg-red-500'} ${transition.state === "loading" && transition.location?.pathname === post.to ? 'animate-bounce' : ''} absolute bottom-3 right-3 px-4 py-2 text-xs font-medium text-white duration-100 hover:bg-opacity-90 rounded-md`}>
           Full Article
         </Link>
       </div>
