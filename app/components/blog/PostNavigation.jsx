@@ -12,10 +12,25 @@ function PostNavigation({...items}) {
     items.items.map(item => ({value: item[1], label: item[0]}))
 
   const styleOptions = {
-    control: (provided) => ({
+    control: (provided, state) => ({
       ...provided,
       width: "45%",
+      cursor: 'pointer',
     }),
+    option: (provided) => ({
+      ...provided,
+      cursor: 'pointer'
+    }),
+    placeholder: (provided) => ({
+      ...provided,
+      color: "#475569",
+    }),
+    dropdownIndicator: (provided) => ({
+      ...provided,
+      color: "#64748b",
+      '&:hover': {color: '#0f172a'}
+    }),
+    
   }
   
   useEffect(() => {

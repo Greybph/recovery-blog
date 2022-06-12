@@ -24,7 +24,7 @@ function BlogPostCard({post, onClick}) {
         : (
           <Form action="/posts" method="post">
             <input type="hidden" name="_action" value="category" />
-            <button type="submit" name="category" value={post.category} className={`${post.category === 'recovery' ? 'text-blue-500' : 'text-red-500'} ${showLoading ? 'animate-pulse' : ''} block mb-4 font-bold text-sm pt-4 cursor-pointer`}
+            <button type="submit" name="category" value={post.category} className={`${post.category === 'recovery' ? 'text-blue-500' : 'text-red-500'} ${showLoading ? 'animate-pulse' : ''} block mb-4 font-bold text-sm pt-4 cursor-pointer hover:underline`}
             onClick={() => setShowLoading(true)}>
               {showLoading ? "Loading..." : post.category}
             </button>
