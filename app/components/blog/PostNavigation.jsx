@@ -29,7 +29,7 @@ function PostNavigation({...items}) {
   return (
     <div>
       <Select 
-        title="Post sections"
+        aria-label='post navigations'
         styles={styleOptions}
         ref={selectRef}
         onChange={(e) => setSection(e.value)}

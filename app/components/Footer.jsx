@@ -25,7 +25,7 @@ function Footer() {
           </Link>
           <a href="https://www.facebook.com/RecoveryOcean"    
             target="_blank" rel="noreferrer">
-            <BsFacebook className="text-3xl duration-100 hover:text-slate-100 text-slate-300" />
+            <BsFacebook aria-label="Eric Anderson Recovery Ocean Facebook Page" className="text-3xl duration-100 hover:text-slate-100 text-slate-300" />
           </a>
         </div>
       </div>

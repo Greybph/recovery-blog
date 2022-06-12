@@ -76,7 +76,7 @@ function NavBar() {
       </ul>
 
       <button
-        title="toggle navigation menu"
+        aria-label={showNav ? "Close Site Navigation" : "Open Site Navigation"}
         id="nav-toggle"
         className='fixed z-[200] p-2 bg-white rounded shadow outline-none right-4 top-4 md:hidden'
         onClick={() => setShowNav(!showNav)}
