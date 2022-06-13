@@ -5,7 +5,7 @@ function PostImage({image, by, alt}) {
         title={by} 
         src={image} 
         alt={alt}
-        className="w-full object-cover aspect-auto"
+        className="object-cover w-full aspect-auto"
       />
     </div>
   )

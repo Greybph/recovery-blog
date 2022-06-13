@@ -1,19 +1,7 @@
 import {Link} from 'remix'
 import Footer from '~/components/Footer'
-import {useEffect} from 'react'
 
 function ErrorPage({error = false}) {
-
-  useEffect(() => {
-    const reloadCount = sessionStorage.getItem('reloadCount')
-    if (error && (!reloadCount || reloadCount < 1)) {
-      sessionStorage.setItem('reloadCount', String(reloadCount + 1))
-      window.location.reload()
-    } else {
-      sessionStorage.removeItem('reloadCount')
-    }
-  }, [error])
-
   return (
     <div className="pt-24 pb-10 md:pt-40 lg:pt-36 font-mont">
       <div>
@@ -23,16 +11,16 @@ function ErrorPage({error = false}) {
 
     {!error ? (
       <div className='flex flex-col items-center justify-center mt-10 space-y-4 lg:mt-20'>
-      <Link to="/posts" className='block cursor-pointer py-4 text-lg font-medium text-center duration-300 border-4 rounded-md md:text-2xl lg:text-3xl w-72 border-slate-900 text-slate-900 hover:bg-slate-900 hover:text-white'>
+      <Link to="/posts" className='block py-4 text-lg font-medium text-center duration-300 border-4 rounded-md cursor-pointer md:text-2xl lg:text-3xl w-72 border-slate-900 text-slate-900 hover:bg-slate-900 hover:text-white'>
         Blog
       </Link>
-      <Link to="/" className='block py-4 cursor-pointer text-lg font-medium text-center duration-300 border-4 rounded-md md:text-2xl lg:text-3xl w-72 border-slate-900 text-slate-900 hover:bg-slate-900 hover:text-white'>
+      <Link to="/" className='block py-4 text-lg font-medium text-center duration-300 border-4 rounded-md cursor-pointer md:text-2xl lg:text-3xl w-72 border-slate-900 text-slate-900 hover:bg-slate-900 hover:text-white'>
         Home
       </Link>
     </div>
     ) : (
       <div className='flex justify-center mt-10 lg:mt-20'>
-      <button className='py-4 text-lg cursor-pointer font-medium text-center duration-300 border-4 rounded-md md:text-2xl lg:text-3xl w-72 border-slate-900 text-slate-900 hover:bg-slate-900 hover:text-white' onClick={() => window.location.reload()}>
+      <button className='py-4 text-lg font-medium text-center duration-300 border-4 rounded-md cursor-pointer md:text-2xl lg:text-3xl w-72 border-slate-900 text-slate-900 hover:bg-slate-900 hover:text-white' onClick={() => window.location.reload()}>
         Try Again
       </button>
       
