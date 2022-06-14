@@ -19,7 +19,7 @@ export async function action({request}) {
 
 export const links = () => {
   return [
-    {rel: "canonical", href: 'https://recoveryocean.com/contact'}
+    {rel: "canonical", href: 'https://www.recoveryocean.com/contact'}
   ]
 }
 

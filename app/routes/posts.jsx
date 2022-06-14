@@ -7,7 +7,7 @@ import { useEffect } from 'react'
 
 export const links = () => {
   return [
-    {rel: "canonical", href: 'https://recoveryocean.com/posts'}
+    {rel: "canonical", href: 'https://www.recoveryocean.com/posts'}
   ]
 }
 
