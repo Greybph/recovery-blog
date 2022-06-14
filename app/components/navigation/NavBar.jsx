@@ -61,7 +61,7 @@ function NavBar() {
     <>
     <nav className={`${showNav ? 'fixed' : 'absolute'} top-0 z-10 flex items-center justify-between w-full px-4 py-6 font-medium font-mont md:px-12 lg:px-28 xl:px-32`}>
       <Link to='/' onClick={() => setShowNav(false)} className={`${transition?.location?.pathname === "/" ? 'animate-pulse' : ''} z-10 text-2xl`}>
-        <img src={logo} alt='recovery ocean text logo' className="w-10 md:w-16 lg:w-20"/>
+        <img src={logo} alt='recovery ocean text logo' className="w-10 md:w-16"/>
       </Link>
       <ul className='hidden space-x-16 md:flex'>
         <li className='relative'>
