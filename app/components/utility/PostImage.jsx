@@ -1,6 +1,6 @@
 function PostImage({image, by, alt, posted, updated = null}) {
   return (
-    <div className="-mt-4 lg:-mt-8">
+    <div className="-mt-4 lg:-mt-10">
       <p className="text-sm font-medium not-prose lg:text-lg">
         {`Posted ${posted}`}
         {updated && ` ~ Updated ${updated}`}
