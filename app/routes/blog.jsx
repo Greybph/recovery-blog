@@ -13,15 +13,6 @@ export const meta = () => {
   }
 }
 
-export function loader() {
-  let dividedListLength = Math.floor(postDex.length / 2)
-
-  return [
-    Math.floor(Math.random() * dividedListLength),
-    Math.floor(Math.random() * (postDex.length/2)) + dividedListLength
-  ]
-}
-
 export async function action({request}){
   const formData = await request.formData()
   const {_action, ...values} = Object.fromEntries(formData)
@@ -37,7 +28,6 @@ export async function action({request}){
     }
     
   function Blog() {
-    let idxs = useLoaderData()
 
   return (
     <>
@@ -48,7 +38,7 @@ export async function action({request}){
         </article>
       </main>
       <section className='flex items-center justify-center pb-20'>
-        <EndCTA idxs={idxs} />
+        <EndCTA />
       </section>
       <SubscribePopup />
     </>
