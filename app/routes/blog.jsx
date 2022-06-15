@@ -34,7 +34,7 @@ export async function action({request}){
       <main className='justify-center px-4 md:px-0 md:flex lg:mt-20'>
         <article className='overflow-x-hidden prose py-28 prose-img:rounded-lg prose-a:text-blue-600 prose-slate lg:prose-xl'>
           <Outlet />
-          <PostAuthor /> 
+          {/* <PostAuthor />  */}
         </article>
       </main>
       <section className='flex items-center justify-center pb-20'>
