@@ -29,9 +29,9 @@ function PostsSection({filter= "all"}) {
   return (
     <main className='px-4 pb-20 md:px-10 lg:px-28 xl:px-32'>
       <div className="flex justify-center mb-8 space-x-4 text-sm md:mb-10 lg:justify-start font-mont">
-        <CategoryButton label="all" color="slate-500" category={category} onClick={() => setCategory("all")} />
-        <CategoryButton label="addiction" color="red-500" category={category} onClick={() => setCategory("addiction")} />
-        <CategoryButton label="recovery" color="blue-500" category={category} onClick={() => setCategory("recovery")} />
+        <CategoryButton label="all" category={category} onClick={() => setCategory("all")} />
+        <CategoryButton label="addiction" category={category} onClick={() => setCategory("addiction")} />
+        <CategoryButton label="recovery" category={category} onClick={() => setCategory("recovery")} />
       </div>
       
       <div className="justify-center md:flex lg:block">

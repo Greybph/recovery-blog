@@ -26,7 +26,7 @@ function RecentPostsSection() {
   return (
     <section className="relative px-4 py-20 pb-10 md:py-32 md:px-10 lg:py-40 font-mont lg:px-28">
       <span id="recent-articles-tag" className="block pt-6 font-bold text-slate-500 text-tiny md:text-base">Recent Articles</span>
-      <span className="block pt-2 pb-4 text-2xl font-bold tracking-tighter text-center md:pb-16 lg:pb-20 md:text-4xl lg:text-5xl">Addiction and Recovery Blog</span>
+      <span className="block pt-2 pb-8 text-2xl font-bold tracking-tighter text-center md:pb-16 lg:pb-20 md:text-4xl lg:text-5xl">Addiction and Recovery Blog</span>
       
       <div className="flex flex-col space-y-4 justify-evenly md:space-y-0 md:flex-row md:space-x-8 lg:space-x-0">
         <BlogPostCard 

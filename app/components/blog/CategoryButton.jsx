@@ -1,11 +1,18 @@
 import React from 'react'
 
-function CategoryButton({label, category, color, onClick}) {
+function CategoryButton({label, category, onClick}) {
   
   return (
     <button 
       id={"cb-" + label}
-      className={`${category === label ? `bg-${color} text-white` : 'text-neutral-500'} ${label === "all" ? 'hover:bg-slate-500' : ''} w-32 p-2 font-medium rounded-md shadow hover:bg-${color} hover:text-white duration-300 border group relative`}
+      className={`
+      ${label === "all" ? 'hover:bg-slate-500' : ''}
+      ${label === "addiction" ? 'hover:bg-red-500' : ''}
+      ${label === "recovery" ? 'hover:bg-blue-500' : ''}
+      ${category === label && label === 'all' ? 'bg-slate-500 text-white' : ''}
+      ${category === label && label === 'addiction' ? 'bg-red-500 text-white' : ''}
+      ${category === label && label === 'recovery' ? 'bg-blue-500 text-white' : ''}
+      w-32 p-2 font-medium rounded-md shadow hover:text-white duration-300 border group relative`}
       onClick={onClick}
     >
       {label[0].toUpperCase() + label.substring(1)}
