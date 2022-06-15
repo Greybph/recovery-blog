@@ -6,7 +6,7 @@ function BlogPostCard({post, onClick}) {
   const [showLoading, setShowLoading] = useState(false)
 
   return (
-    <article className='relative flex flex-col w-full border rounded-md shadow md:max-w-xs not-prose'>
+    <article className='relative flex flex-col w-full bg-white border rounded-md shadow md:max-w-xs not-prose'>
       <Link to={post?.to}>
         <img
           className='object-cover w-full h-32 max-w-full aspect-auto md:h-24 lg:h-28 rounded-t-md hover:opacity-95' 
@@ -35,9 +35,12 @@ function BlogPostCard({post, onClick}) {
           <Link className="hover:underline" to={post?.to}>{post?.title}</Link>
         </h2>
         <p className='pb-16 text-sm font-medium leading-6 text-slate-700 lg:leading-7 lg:text-base'>{post?.description}</p>
-        <Link to={post?.to} className={`${post?.category === 'recovery' ? 'bg-blue-500' : 'bg-red-500'} ${transition?.state === "loading" && transition?.location?.pathname === post?.to ? 'animate-bounce' : ''} absolute bottom-3 right-3 px-4 py-2 text-xs font-medium text-white duration-100 hover:bg-opacity-90 rounded-md`}>
+        
+        <Link to={post?.to} className={`${post?.category === 'recovery' ? 'bg-blue-500' : 'bg-red-500'} ${transition?.state === "loading" && transition?.location?.pathname === post?.to ? 'animate-bounce' : ''} absolute bottom-3 right-3 px-4 py-2 text-xs font-medium text-white duration-300 rounded-md group lg:hover:rotate-3 tracking-wide`}>
           Full Article
+          <div className={`${post?.category === 'addiction' ? 'border-red-500' : 'border-blue-500'} absolute duration-300 transition-transform top-0 left-0 w-full h-full rounded-md group-hover:scale-x-[1.1] scale-100 lg:group-hover:scale-y-[1.1] group-hover:scale-y-[1.35] border-2 lg:group-hover:-rotate-[10deg]`}></div>
         </Link>
+
       </div>
     </article>
   )
