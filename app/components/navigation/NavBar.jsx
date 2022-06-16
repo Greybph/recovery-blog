@@ -97,6 +97,7 @@ function NavBar() {
     </nav>
 
     <button
+        aria-label="scroll to top of page"
         title="scroll to top"
         id="scroll-top-btn"
         onClick={handleClick} 

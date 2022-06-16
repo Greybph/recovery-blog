@@ -135,7 +135,6 @@ export default function App() {
               />
             </>
           )}
-          <div id="fb-root"></div>
         <NavBar />
         <ScrollNav />
         <Outlet />
