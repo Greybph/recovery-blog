@@ -44,7 +44,16 @@ function ContactPage() {
     <main className='flex flex-col px-4 pt-24 pb-32 lg:flex-row md:pb-48 lg:justify-between md:pt-40 lg:pt-36 md:px-12 lg:px-28 xl:px-32 font-mont'>
       <div id="contact-hero-titles" className="opacity-0 md:mb-14 lg:mr-8 lg:mb-0">
         <span className='block text-center md:text-left font-bold text-3xl lg:text-[3.5rem] xl:text-[4.5rem] md:text-[3rem] md:mb-4'>Contact</span>
-        <span className="block mt-2 font-medium tracking-tight text-center md:mt-6 md:text-left md:text-3xl">Let's chat!</span>        
+        <span className="hidden mt-6 text-3xl font-medium tracking-tight text-left md:block">Let's chat!</span>
+
+        <div className="mt-6 space-y-2 text-sm font-medium md:text-base md:mt-8">
+          <p className="text-center md:text-left">Use this form to send me a message</p>      
+          <p className="text-center md:text-left">Or contact me on <a href="https://www.facebook.com/RecoveryOcean"    
+              target="_blank" rel="noreferrer" className="font-bold text-black underline duration-100 hover:text-slate-900">
+              Facebook
+            </a>
+          </p>  
+        </div>
       </div>
       <ContactForm />
     </main>
