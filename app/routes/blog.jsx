@@ -1,9 +1,8 @@
-import {Outlet, useLoaderData} from 'remix'
+import {Outlet} from 'remix'
 import SubscribePopup from '~/components/SubscribePopup'
 import subscribeUser from '../utils/subscribeUser.server'
 import EndCTA from '../components/blog/EndCTA'
 import submitQuestion from '~/utils/submitQuestion.server'
-import postDex from '~/postDex'
 import PostAuthor from '../components/blog/PostAuthor'
 
 export const meta = () => {
