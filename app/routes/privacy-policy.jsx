@@ -2,11 +2,11 @@ import React from 'react'
 
 function PrivacyPolicy() {
   return (
-    <div className='flex justify-center py-24 font-mont'>
+    <div className='flex justify-center py-24 font-mont px-4 md:px-0'>
       <main className='prose'>
         <h1>Pivacy Policy</h1>
         <h2>Who we are</h2>
-        <p>Our website address is https://recoveryocean.com</p>
+        <p>Our website address is https://www.recoveryocean.com</p>
         <h2>What personal data does Recovery Ocean collect and why?</h2>
         <h3>Submitted Questions</h3>
         <p>When a visitor submits a question on the site we collect the email address and question sent.
