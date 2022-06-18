@@ -16,7 +16,7 @@ function CategoryButton({label, category, onClick}) {
       onClick={onClick}
     >
       {label[0].toUpperCase() + label.substring(1)}
-      <div className={`absolute top-0 left-0 w-full h-full transition-transform duration-300 rounded-md ${label === "all" ? 'border-slate-500' : ''} ${label === "addiction" ? 'border-red-500' : ''} ${label === "recovery" ? 'border-blue-500' : ''} group-hover:scale-x-[1.08] group-hover:scale-y-[1.3] group-hover:border-2 -z-10`}></div>
+      <div className={`hidden lg:block absolute top-0 left-0 w-full h-full transition-transform duration-300 rounded-md ${label === "all" ? 'border-slate-500' : ''} ${label === "addiction" ? 'border-red-500' : ''} ${label === "recovery" ? 'border-blue-500' : ''} group-hover:scale-x-[1.08] group-hover:scale-y-[1.3] group-hover:border-2 -z-10`}></div>
     </button>
   )
 }
