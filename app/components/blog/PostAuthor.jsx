@@ -10,7 +10,7 @@ function PostAuthor() {
        <div className="flex flex-col items-center px-2 py-2 md:py-10 md:items-start md:flex-row md:px-0">
         
     <a href="https://www.facebook.com/RecoveryOcean" target="_blank" rel="noreferrer" aria-label='Eric Anderson"s Facebook Page' title="Facebook">
-      <div style={{backgroundImage: 'url("' + image + '")'}} className="w-4 h-4 p-10 mb-2 bg-top bg-cover rounded-full md:w-10 hover:bg-slate-200 duration-1000 md:h-10 md:mr-10 md:p-14 bg-slate-500 md:mb-0">
+      <div style={{backgroundImage: 'url("' + image + '")'}} className="w-4 h-4 p-10 mb-2 duration-1000 bg-top bg-cover rounded-full md:w-10 hover:bg-slate-200 md:h-10 md:mr-10 md:p-14 bg-slate-500 md:mb-0">
       </div>
     </a>
         

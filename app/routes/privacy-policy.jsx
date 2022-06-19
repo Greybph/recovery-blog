@@ -2,7 +2,7 @@ import React from 'react'
 
 function PrivacyPolicy() {
   return (
-    <div className='flex justify-center py-24 font-mont px-4 md:px-0'>
+    <div className='flex justify-center px-4 py-24 md:py-32 lg:py-44 font-mont md:px-0'>
       <main className='prose'>
         <h1>Pivacy Policy</h1>
         <h2>Who we are</h2>
