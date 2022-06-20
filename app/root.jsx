@@ -11,7 +11,7 @@ import {
 } from "remix";
 import tailwindUrl from './styles/tailwind.css'
 import NavBar from "./components/navigation/NavBar"
-import favicon from '../app/assets/logo.svg'
+import favicon from '../app/assets/favicon.svg'
 import ScrollNav from "./components/navigation/ScrollNav"
 import Footer from './components/Footer'
 import {useEffect} from 'react'

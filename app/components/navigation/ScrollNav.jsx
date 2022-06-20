@@ -38,7 +38,7 @@ function ScrollNav() {
   }, [showScrollNav])
   
     return (
-      <div id="scroll-nav" className={`${showScrollNav ?'z-50' : '-z-50'} fixed top-0 left-0 items-center justify-between hidden w-full px-4 py-4 bg-white shadow opacity-0 md:px-12 lg:px-28 md:flex font-mont`}>
+      <div id="scroll-nav" className={`${showScrollNav ?'z-50' : '-z-50'} fixed top-0 left-0 items-center justify-between hidden w-full px-4 py-2 bg-white shadow opacity-0 md:px-12 lg:px-28 md:flex font-mont`}>
         <Link to='/'>
           <img src={logo} alt="recovery ocean text logo"  className="w-16"/>
         </Link>

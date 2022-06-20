@@ -48,7 +48,7 @@ function WeCanRecoverSection({image}) {
       scrollTrigger: {
         trigger: '#we-can-recover-image',
         scrub: tablet ? 1 : 2,
-        end: 'top 60%',   
+        end: 'top 50%',   
         start: tablet && 'top bottom'     
       }
     })

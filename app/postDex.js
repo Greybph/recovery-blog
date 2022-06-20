@@ -82,7 +82,6 @@ const postDex = [
     to: "/blog/encountering-addicts-from-our-past",
     image: 'https://res.cloudinary.com/recovery-ocean/image/upload/w_305/v1654800839/clock_ke5hwm.jpg',
   },
- 
 ]
 
 export default postDex
