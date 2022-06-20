@@ -40,7 +40,7 @@ function CountDownSection() {
     let wide = window.innerWidth >= 768
 
     gsap.from('.countdown-card', {
-      y: 200,
+      y: 150,
       opacity: 0,
       stagger: .3,
       scrollTrigger: {
