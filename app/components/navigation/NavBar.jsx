@@ -1,6 +1,6 @@
 import {Link, useTransition} from 'remix'
 import {FiMenu} from 'react-icons/fi'
-import {useState, useEffect} from 'react'
+import {useState, useEffect, useCallback} from 'react'
 import {AiOutlineClose} from 'react-icons/ai'
 import MobileNavList from './MobileNavList'
 import {gsap} from 'gsap'
@@ -21,6 +21,13 @@ function NavBar() {
   const handleScroll = () => window.scrollY > 164 ? 
     setShowScrollBtn(true) : setShowScrollBtn(false)
 
+  const handleOutsideClick = useCallback((e) => {
+    if (e.target.parentNode.id !== "mobile-nav-container") {
+      setShowNav(false)
+      document.removeEventListener('click', handleOutsideClick)
+    }
+  }, [])   
+
   useEffect(() => {
     window.addEventListener('resize', handleResize)
     return () => window.removeEventListener('resize', handleResize)
@@ -30,6 +37,12 @@ function NavBar() {
     window.addEventListener('scroll', handleScroll)
     return () => window.removeEventListener('scroll', handleScroll)
   }, [])
+
+  useEffect(() => {
+    if (showNav === true) {
+      document.addEventListener('click', handleOutsideClick)
+    }
+  }, [showNav, handleOutsideClick])
 
   useEffect(() => {
     if (!firstRender) {
@@ -63,7 +76,7 @@ function NavBar() {
       <Link to='/' onClick={() => setShowNav(false)} className={`${transition?.location?.pathname === "/" ? 'animate-pulse' : ''} z-10 text-2xl`}>
         <img src={logo} alt='recovery ocean text logo' className="w-10 md:w-16"/>
       </Link>
-      <ul className='hidden space-x-16 md:flex'>
+      <ul className='hidden space-x-16 lg:flex'>
         <li className='relative'>
           <Link className={`${transition?.location?.pathname === "/blog" ? 'animate-pulse' : ''} font-medium text-lg after:content-[''] after:bg-black after:absolute after:bottom-0 after:left-0 after:h-[2px] after:w-full after:scale-x-0 hover:after:scale-x-100 after:duration-200 after:origin-bottom-left`} to='/posts'>Blog</Link>
         </li>
@@ -78,7 +91,7 @@ function NavBar() {
       <button
         aria-label={showNav ? "Close Site Navigation" : "Open Site Navigation"}
         id="nav-toggle"
-        className='fixed z-[200] p-2 bg-white rounded shadow outline-none right-4 top-4 md:hidden'
+        className='fixed z-[200] p-2 bg-white rounded shadow outline-none right-4 top-4 md:right-6 md:top-6 lg:hidden'
         onClick={() => setShowNav(!showNav)}
       >
         {toggleIcon === 'close' ? 
