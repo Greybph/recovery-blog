@@ -74,7 +74,7 @@ function NotAloneSection() {
           src={image} alt="Man with a hood up standing in a destroyed house with rubble all around him." />
         <span className='hidden'>Photo by micha brandli</span>
       </div>
-      <div id="not-alone-section-line" className='absolute hidden h-0 border-l border-blue-900 xl:block xl:left-20 xl:top-44'></div>
+      <div id="not-alone-section-line" className='absolute hidden h-0 border-l border-white xl:block xl:left-20 xl:top-44'></div>
     </section>
   )
 }

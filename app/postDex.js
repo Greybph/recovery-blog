@@ -82,6 +82,30 @@ const postDex = [
     to: "/blog/encountering-addicts-from-our-past",
     image: 'https://res.cloudinary.com/recovery-ocean/image/upload/w_305/v1654800839/clock_ke5hwm.jpg',
   },
+  {
+    id: 13,
+    title: "Virtual NA Meetings - The Complete Beginner's Guide",
+    description: "Get started attending virtual NA meetings today!",
+    category: "recovery",
+    to: "/blog/na/virtual-na-meetings-beginners-guide",
+    image: 'https://res.cloudinary.com/recovery-ocean/image/upload/w_305/v1655857512/video-conference-g311ca2ef0_640_jfrfgt.png',
+  },
+  {
+    id: 14,
+    title: "12 Steps of NA - The Ultimate Cheat Sheet",
+    description: "Narcotics Anonymous 12 step program has helped thousands of addicts around the world.",
+    category: "recovery",
+    to: "/blog/na/12-steps-of-na-cheat-sheet",
+    image: 'https://res.cloudinary.com/recovery-ocean/image/upload/w_305/v1655939061/carousel-g6de194375_640_rvxkrk.png',
+  },
+  {
+    id: 15,
+    title: "12 Traditions of NA",
+    description: "The group guideline of Narcotics Anonymous",
+    category: "recovery",
+    to: "/blog/na/12-traditions-of-na",
+    image: 'https://res.cloudinary.com/recovery-ocean/image/upload/w_305/v1656106472/rules-1752415_640_oef0ej.jpg',
+  },
 ]
 
 export default postDex

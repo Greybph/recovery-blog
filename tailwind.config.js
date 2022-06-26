@@ -15,6 +15,10 @@ module.exports = {
       fontSize: {
         'tiny': '.7rem'
       },
+      colors: {
+        'twitter' : '#1d9bf0',
+        'facebook': '#1b74e4'
+      }
     },
   },
   plugins: [
