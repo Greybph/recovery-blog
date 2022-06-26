@@ -91,7 +91,7 @@ function NavBar() {
       <button
         aria-label={showNav ? "Close Site Navigation" : "Open Site Navigation"}
         id="nav-toggle"
-        className='fixed z-[200] p-2 bg-white rounded shadow outline-none right-4 top-4 md:right-6 md:top-6 lg:hidden'
+        className='absolute z-[200] p-2 bg-white rounded shadow outline-none right-4 top-4 md:right-6 md:top-6 lg:hidden'
         onClick={() => setShowNav(!showNav)}
       >
         {toggleIcon === 'close' ? 
