@@ -19,7 +19,7 @@ function Hero() {
     <div className="flex items-center justify-center mt-10 md:mt-14 md:block">
       <Link to='/posts' className="relative px-10 py-4 text-xl font-medium tracking-tight text-white duration-1000 rounded-md bg-slate-800 group md:text-2xl">
           Get Started
-        <div className='absolute top-0 left-0 w-full h-full duration-300 border-2 rounded-md pointer-events-none border-slate-900 group-hover:scale-x-105 group-hover:scale-y-[1.2]'></div>
+        <div className='absolute top-0 left-0 w-full h-full duration-300 border-2 rounded-md pointer-events-none border-slate-800 group-hover:scale-x-105 group-hover:scale-y-[1.2]'></div>
       </Link>
     </div>
     </section>
