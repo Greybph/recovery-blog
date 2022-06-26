@@ -57,7 +57,7 @@ function WeCanRecoverSection({image}) {
   return (
     <section id="we-can-recover-container" className="relative flex flex-col justify-between px-4 py-8 mb-10 bg-slate-200 md:px-14 md:py-20 lg:items-center lg:flex-row lg:p-0 lg:bg-white md:mb-0 lg:mb-32">
       <div id="we-can-recover-text" className="rounded-md text-slate-900 bg-slate-200 lg:w-3/5 lg:px-16 lg:py-44 xl:px-40 xl:py-60 font-mont">
-        <span className='block mb-1 text-2xl font-bold md:text-4xl md:mb-2 lg:mb-2 lg:text-5xl xl:text-6xl slate-900 whitespace-nowrap'>We Can Recover</span>
+        <span className='block mb-1 text-2xl font-bold md:text-4xl md:mb-2 lg:mb-2 lg:text-5xl xl:text-6xl slate-900 whitespace-nowrap'>We Do Recover</span>
         <p className="mb-8 text-xs font-medium leading-6 max-w-none md:max-w-xl md:leading-10 lg:leading-6 md:text-xl lg:text-base xl:text-base md:mb-14 lg:mb-0 lg:max-w-lg xl:leading-7">No matter how dark things may seem for you or your loved one, recovery is possible. People do beat this disease and get their lives back.</p>
         <Form action='/posts' method="post">
           <input type="hidden" name="_action" value="category" />
