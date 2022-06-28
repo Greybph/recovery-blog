@@ -22,4 +22,5 @@ export default function heroAnimation(titles, para = null) {
       delay: .2
     })
   }
+
 }
