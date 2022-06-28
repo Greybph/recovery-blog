@@ -65,19 +65,19 @@ function SubscriblePopup() {
         className='mx-auto w-14 md:w-20'
         src={emailIcon} alt="email icon" />
       <fetcher.Form method='POST' className='pb-2 mx-auto md:prose md:pb-0'>
-        <span className='block text-lg font-bold text-center md:text-2xl whitespace-nowrap'>Get Updates!</span>
-        <p className='max-w-xs mx-auto mt-1 text-xs font-medium text-center md:text-sm md:mt-2'>Sign up to receive email alerts everytime I release a new post.</p>
+        <span className='block text-lg font-bold text-center md:text-2xl whitespace-nowrap'>Subscribe</span>
+        <p className='max-w-xs mx-auto mt-1 font-medium text-center md:text-sm md:mt-2'>Sign up to receive email alerts when I release a new post.</p>
         <div className='flex mt-3 md:block md:mt-0'>
           <input
             placeholder='email address'
-            className='w-full px-4 py-2 mt-2 text-sm rounded md:text-base outline-slate-600' 
+            className='w-full px-4 py-3 mt-2 text-base rounded md:py-2 md:text-base outline-slate-600' 
             type="email" name="email" id="email" />
           <button 
             type="submit"
             onClick={handleSubmit}
-            className='w-1/2 px-2 py-1 mt-2 -ml-2 text-sm font-bold rounded-md md:-ml-0 rounded-r-md md:py-2 md:text-xl md:px-0 md:w-full md:mt-4 text-slate-200 bg-slate-900 hover:bg-opacity-90'
+            className='w-1/2 px-2 py-1 mt-2 -ml-2 text-base font-bold rounded-md md:-ml-0 rounded-r-md md:py-2 md:text-xl md:px-0 md:w-full md:mt-4 text-slate-200 bg-slate-900 hover:bg-opacity-90'
           >
-            Subscribe
+            Done
           </button>
 
         </div>
