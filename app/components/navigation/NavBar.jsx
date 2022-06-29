@@ -1,4 +1,4 @@
-import {Link, useTransition} from 'remix'
+import {Link, useTransition, useLocation} from 'remix'
 import {FiMenu} from 'react-icons/fi'
 import {useState, useEffect, useCallback} from 'react'
 import {AiOutlineClose} from 'react-icons/ai'
@@ -8,6 +8,7 @@ import logo from '~/assets/logo.svg'
 import {CgChevronUp} from 'react-icons/cg'
 
 function NavBar() {
+  const path = useLocation().pathname
   const transition = useTransition()
   const [showNav, setShowNav] = useState(false)
   const [toggleIcon, setToggleIcon] = useState('menu')
@@ -78,13 +79,13 @@ function NavBar() {
       </Link>
       <ul className='hidden space-x-16 lg:flex'>
         <li className='relative'>
-          <Link className={`${transition?.location?.pathname === "/blog" ? 'animate-pulse' : ''} font-medium text-lg after:content-[''] after:bg-black after:absolute after:bottom-0 after:left-0 after:h-[2px] after:w-full after:scale-x-0 hover:after:scale-x-100 after:duration-200 after:origin-bottom-left`} to='/posts'>Blog</Link>
+          <Link className={`${transition?.location?.pathname === "/blog" ? 'animate-pulse' : ''} font-medium text-lg after:content-[''] after:bg-black after:absolute after:bottom-0 after:left-0 after:h-[2px] after:w-full after:scale-x-0 hover:after:scale-x-100 after:duration-200 after:origin-bottom-left ${path === '/posts' ? 'after:scale-x-100' : ''}`} to='/posts'>Blog</Link>
         </li>
         <li className='relative'>
-          <Link className={`${transition?.location?.pathname === "/about" ? 'animate-pulse' : ''} font-medium text-lg after:content-[''] after:bg-black after:absolute after:bottom-0 after:left-0 after:h-[2px] after:w-full after:scale-x-0 hover:after:scale-x-100 after:duration-200 after:origin-bottom-left`}  to='/about'>About</Link>
+          <Link className={`${transition?.location?.pathname === "/about" ? 'animate-pulse' : ''} font-medium text-lg after:content-[''] after:bg-black after:absolute after:bottom-0 after:left-0 after:h-[2px] after:w-full after:scale-x-0 hover:after:scale-x-100 after:duration-200 after:origin-bottom-left ${path === '/about' ? 'after:scale-x-100' : ''}`}  to='/about'>About</Link>
         </li>
         <li className='relative'>
-          <Link className={`${transition?.location?.pathname === "/contact" ? 'animate-pulse' : ''} font-medium text-lg after:content-[''] after:bg-black after:absolute after:bottom-0 after:left-0 after:h-[2px] after:w-full after:scale-x-0 hover:after:scale-x-100 after:duration-200 after:origin-bottom-left`} to='/contact'>Contact</Link>
+          <Link className={`${transition?.location?.pathname === "/contact" ? 'animate-pulse' : ''} font-medium text-lg after:content-[''] after:bg-black after:absolute after:bottom-0 after:left-0 after:h-[2px] after:w-full after:scale-x-0 hover:after:scale-x-100 after:duration-200 after:origin-bottom-left ${path === '/contact' ? 'after:scale-x-100' : ''}`} to='/contact'>Contact</Link>
         </li>
       </ul>
 
