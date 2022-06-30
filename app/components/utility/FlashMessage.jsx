@@ -1,6 +1,6 @@
 import {useEffect, useState} from 'react'
 
-function FlashMessage({children, duration}) {
+function FlashMessage({children, duration, className}) {
   const [showMessage, setShowMessage] = useState(true)
   
   useEffect(() => {
@@ -9,7 +9,7 @@ function FlashMessage({children, duration}) {
 
   if (showMessage) {
     return (
-      <div>
+      <div className={className}>
         {children}
       </div>
     )

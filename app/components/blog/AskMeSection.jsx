@@ -46,6 +46,7 @@ function AskMeSection() {
         {action?.sent && 
           <FlashMessage duration={5000}>
             <span className='block font-bold text-center text-slate-900'>Question Sent!</span>
+            <span className='block font-bold text-center text-slate-900'>We will reply to the email you provided.</span>
           </FlashMessage>
         }
 

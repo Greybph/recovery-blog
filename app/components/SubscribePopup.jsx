@@ -2,6 +2,7 @@ import {useFetcher, useLocation} from 'remix'
 import emailIcon from '~/assets/emailIcon.svg'
 import {CgClose} from 'react-icons/cg'
 import {useState, useEffect} from "react"
+import FlashMessage from '~/components/utility/FlashMessage'
 import {gsap} from 'gsap'
 
 function SubscriblePopup() {
@@ -10,6 +11,7 @@ function SubscriblePopup() {
   const [showPopup, setShowPopup] = useState(false)
   const [closePopup, setClosePopup] = useState(false)
   const [didSubscribe, setDidSubscribe] = useState(false)
+  const [invalidEmail, setInvalidEmail] = useState(false)
   const [isPhone, setIsPhone] = useState()
 
   const handleScroll = () => 
@@ -19,6 +21,8 @@ function SubscriblePopup() {
   const handleSubmit = (e) => {
     e.preventDefault()
     const email = document.querySelector('#email').value
+    const validEmail = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/
+    if (!email.match(validEmail)) return setInvalidEmail(true)
     fetcher.submit({email, post: path, _action: "subscribe"}, {method: 'post', action:'/blog'})
     setDidSubscribe(true)
   }
@@ -60,6 +64,11 @@ function SubscriblePopup() {
   return showPopup ?
   (
     <div id="popup" className={`fixed opacity-0 bottom-0 left-0 z-50 px-4 py-2 md:p-6 rounded-md font-mont bg-slate-300 ${isPhone ? "w-full" : ""}`}>
+      {invalidEmail && 
+        <FlashMessage duration={5000} className="absolute p-2 mx-auto -translate-y-1/2 bg-white rounded-md left-4 right-4 top-1/2">
+          <p className='font-medium text-center text-red-500'>Please enter a valid email.</p>
+        </FlashMessage>
+      }
       <img 
         id="envelope"
         className='mx-auto w-14 md:w-20'

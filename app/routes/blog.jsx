@@ -30,7 +30,7 @@ export async function action({request}){
 
   return (
     <>
-      <main className='justify-center px-4 md:px-0 flex lg:mt-20'>
+      <main className='flex justify-center px-4 md:px-0 lg:mt-20'>
         <article className='overflow-x-hidden prose py-28 prose-img:rounded-lg prose-a:text-blue-600 prose-slate lg:prose-xl'>
           <Outlet />
           <PostAuthor /> 
