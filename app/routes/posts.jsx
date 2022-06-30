@@ -46,9 +46,9 @@ function PostsPage() {
   return (
     <section>
       <div className='px-4 pt-24 pb-8 md:pb-20 md:pt-40 lg:pt-36 md:px-10 lg:px-28 xl:px-32 font-mont'>
-        <span className='block text-center md:text-left font-bold text-3xl lg:text-[4.5rem] md:text-[3rem]'>Recovery Ocean Blog</span>
+        <span className='block text-center lg:text-left font-bold text-3xl lg:text-[4.5rem] md:text-[3rem] whitespace-nowrap'>Recovery Ocean Blog</span>
         <div className='mt-2 space-y-4 md:space-y-8 md:mt-6'>
-          <span className="block text-lg font-medium tracking-tight text-center md:text-left md:text-3xl">By Eric Anderson</span>
+          <span className="block text-lg font-medium tracking-tight text-center lg:text-left md:text-3xl">By Eric Anderson</span>
         </div>
       </div>
 
