@@ -110,7 +110,7 @@ export default function App() {
         <meta name="bingbot" content="index, follow" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:site" content="@_RecoveryOcean" />
-        <script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit"></script>        
+        <script async src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit"></script>        
         <Meta />
         <Links />
       </head>
