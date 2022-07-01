@@ -5,7 +5,6 @@ import RecoveryTextSection from "../components/index/RecoveryTextSection"
 import WeCanRecoverSection from '~/components/index/WeCanRecoverSection'
 import NotAloneSection from '~/components/index/NotAloneSection'
 import AskMeSection from '~/components/blog/AskMeSection'
-import image from '~/assets/hopeful-man-in-nature.jpg'
 import submitQuestion from '~/utils/submitQuestion.server'
 
 export const meta = () => {
@@ -23,7 +22,6 @@ export const meta = () => {
 
 export const links = () => {
   return [
-    {rel: "preload", as: "image", href: image},
     {rel: "canonical", href: 'https://www.recoveryocean.com'},
   ]
 }
@@ -47,7 +45,7 @@ export default function Index() {
       <AddictionTextSection />
       <NotAloneSection />
       <RecoveryTextSection />
-      <WeCanRecoverSection image={image} />
+      <WeCanRecoverSection />
       <RecentPostsSection />
       <AskMeSection />
     </div>

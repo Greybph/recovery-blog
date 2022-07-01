@@ -5,7 +5,7 @@ import { Form, useTransition } from 'remix'
 
 gsap.registerPlugin(ScrollTrigger)
 
-function WeCanRecoverSection({image}) {
+function WeCanRecoverSection() {
   const transition = useTransition()
   const [showLoading, setShowLoading] = useState(false)
 
@@ -71,7 +71,7 @@ function WeCanRecoverSection({image}) {
       <div id="we-can-recover-image" className="pt-8 mx-auto lg:w-2/5 lg:absolute right-10 lg:pt-0">
         <img 
           className="rounded-md"
-          src={image} alt="Man standing on a rock staring out over the ocean as the sun rises and starts a brand new day." />
+          src="https://res.cloudinary.com/recovery-ocean/image/upload/c_scale,w_550/f_auto,q_auto/v1656706362/hopeful-man-in-nature_dubv6m.jpg" alt="Man standing on a rock staring out over the ocean as the sun rises and starts a brand new day." />
         <span className='hidden'>Photo by joshua earle</span>
       </div>
 

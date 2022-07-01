@@ -1,7 +1,6 @@
 import { useEffect, useState } from 'react'
 import {gsap} from 'gsap'
 import {ScrollTrigger} from 'gsap/dist/ScrollTrigger'
-import image from '~/assets/man-in-destroyed-building.jpg'
 import { Form, useTransition } from 'remix'
 
 gsap.registerPlugin(ScrollTrigger)
@@ -71,7 +70,7 @@ function NotAloneSection() {
       <div id="not-alone-section-image" className="pt-8 mx-auto lg:w-2/5 lg:absolute right-10 lg:pt-0">
         <img 
           className="rounded-md"
-          src={image} alt="Man with a hood up standing in a destroyed house with rubble all around him." />
+          src='https://res.cloudinary.com/recovery-ocean/image/upload/c_scale,w_550/f_auto,q_auto/v1656706370/man-in-destroyed-building_gjr45h.jpg' alt="Man with a hood up standing in a destroyed house with rubble all around him." />
         <span className='hidden'>Photo by micha brandli</span>
       </div>
       <div id="not-alone-section-line" className='absolute hidden h-0 border-l border-white xl:block xl:left-20 xl:top-44'></div>
