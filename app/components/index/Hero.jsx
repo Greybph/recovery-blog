@@ -1,4 +1,3 @@
-import heroBg from '~/assets/indexHeroBg.jpg'
 import {useEffect} from 'react'
 import heroAnimation from '~/utils/heroAnimation'
 import {Link} from 'remix'
@@ -9,7 +8,7 @@ function Hero() {
  }, [])
 
   return (
-    <section style={{backgroundColor: '#f1f2f4', backgroundImage: `url('${heroBg}')`}} className="mb-20 md:mb-0 flex-col flex justify-center md:block px-4 md:bg-blend-normal bg-cover md:pt-40 lg:pt-36 md:bg-right h-[85vh] xs:h-[65vh] md:h-[85vh] md:px-10 lg:px-28 xl:px-32 font-mont bg-fixed">
+    <section style={{backgroundColor: '#f1f2f4', backgroundImage: `url('https://res.cloudinary.com/recovery-ocean/image/upload/c_scale/f_auto,q_auto/v1656708113/indexHeroBg_r4ovzf.jpg')`}} className="mb-20 md:mb-0 flex-col flex justify-center md:block px-4 md:bg-blend-normal bg-cover md:pt-40 lg:pt-36 md:bg-right h-[85vh] xs:h-[65vh] md:h-[85vh] md:px-10 lg:px-28 xl:px-32 font-mont bg-fixed">
       <span className='hidden'>Image by Jean Gerber on Unsplash</span>
       <div id="index-hero-titles" className='opacity-0'>
         <span className='block text-center md:text-left font-bold text-3xl lg:text-[4.5rem] md:text-[3rem]'>Recovery Ocean</span>
