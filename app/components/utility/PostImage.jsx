@@ -11,7 +11,8 @@ function PostImage({
   by,
   alt,
   posted = null,
-  updated = null
+  updated = null,
+  lazy
 }) {
   const path = useLocation().pathname
   const handleClick = () => window.open('https://twitter.com/share?url=https://www.recoveryocean.com' + path)
@@ -36,12 +37,13 @@ function PostImage({
       </p>      
    
       <img 
+        loading={lazy ? "lazy" : "eager"}
         id="post-image"
         title={by} 
         src={image} 
         alt={alt}
         className="object-cover w-full aspect-auto"
-        />
+      />
 
         <div id="share-container" className='fixed right-0 z-10 grid grid-cols-1 translate-x-full rounded-l-md lg:rounded-l-none lg:rounded-r-md lg:rounded-md lg:translate-x-0 top-20 lg:right-auto lg:top-1/2 lg:left-0 lg:-translate-y-1/2 bg-neutral-200'>
           <button className='p-2 duration-100 rounded-l-md lg:rounded-l-none lg:rounded-r-md bg-netural-200 lg:pt-2 lg:px-2 lg:pb-2 hover:bg-neutral-300'>
