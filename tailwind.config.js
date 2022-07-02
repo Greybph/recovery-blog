@@ -17,7 +17,7 @@ module.exports = {
       },
       colors: {
         'twitter' : '#1d9bf0',
-        'facebook': '#1b74e4'
+        'facebook': '#1b74e4',
       }
     },
   },
