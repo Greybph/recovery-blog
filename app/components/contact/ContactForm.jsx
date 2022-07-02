@@ -34,6 +34,7 @@ function ContactForm() {
       {action?.sent && 
         <FlashMessage duration={5000}>
           <span className='block font-bold text-center text-slate-900'>Message Sent!</span>
+          <span className='block font-bold text-center text-slate-900'>Monitor your email for my reply 🙂</span>
         </FlashMessage>
       }
       {action?.needsVerification && 

@@ -1,8 +1,5 @@
 import {useTransition, Form , useActionData} from 'remix'
 import {useState, useEffect, useRef} from 'react'
-import FlashMessage from '~/components/utility/FlashMessage'
-
-
 
 function AskMeSection() {
   const transition= useTransition()
@@ -44,10 +41,10 @@ function AskMeSection() {
         ) : ""}
 
         {action?.sent && 
-          <FlashMessage duration={5000}>
+          <div>
             <span className='block font-bold text-center text-slate-900'>Question Sent!</span>
-            <span className='block font-bold text-center text-slate-900'>We will reply to the email you provided.</span>
-          </FlashMessage>
+            <span className='block font-bold text-center text-slate-900'>Monitor your email for my reply 🙂</span>
+          </div>
         }
 
         <button
