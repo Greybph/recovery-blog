@@ -34,9 +34,16 @@ function PostsSection({filter= "all"}) {
   useEffect(() => {
     if (window.scrollY > 370) window.scrollTo(
         0, 
-        window.innerWidth >= 768 ? 250 : 0,
+        window.innerWidth >= 768 ? 190 : 0,
       )
   }, [category])
+
+  useEffect(() => {
+    gsap.to('#dice-icon', {
+      rotate: 360,
+      scale: 2,
+    })
+  }, [])
 
   useEffect(() => {
     gsap.from(`#cb-${category}`, {y: 20, duration: 0.3, stagger: 0.1})
@@ -52,8 +59,8 @@ function PostsSection({filter= "all"}) {
         <button title="shuffle" aria-label="shuffle posts" onClick={() => setShuffle(true)} className="p-2 duration-100 border rounded-md shadow-md lg:hover:scale-105">
           <BsShuffle className="text-2xl text-blue-500 lg:text-2xl" />
         </button>
-        <Link to={randomPostPath} title="random" aria-label="random post" className='p-2 duration-100 border rounded-md shadow-md lg:hover:scale-105'>
-          <GiPerspectiveDiceSixFacesRandom className={`${transition.state === 'loading' && transition.location.pathname === randomPostPath ? 'animate-spin' : ''} text-2xl text-blue-500 lg:text-2xl`} />
+        <Link to={randomPostPath} id="dice-container" title="random" aria-label="random post" className={`${transition.state === 'loading' && transition.location.pathname === randomPostPath ? 'animate-spin' : '' } p-2 duration-100 rounded-md lg:hover:scale-105`}>
+          <GiPerspectiveDiceSixFacesRandom id="dice-icon" className=' text-2xl text-blue-500 lg:text-2xl scale-0' />
         </Link>
       </div>
       

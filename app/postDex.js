@@ -119,6 +119,15 @@ const postDex = [
     image: 'https://res.cloudinary.com/recovery-ocean/image/upload/w_305/v1656106472/rules-1752415_640_oef0ej.jpg',
     suggest: [13,3]
   },
+  {
+    id: 16,
+    title: "5th Tradition of NA",
+    description: "Learn about the primary purpose of NA groups.",
+    category: "recovery",
+    to: "/blog/na/5th-tradition-of-na",
+    image: 'https://res.cloudinary.com/recovery-ocean/image/upload/q_auto,f_auto/v1656885676/photo-1552912276-dde406237918_atxejh.webp',
+    suggest: [15,5]
+  },
 ]
 
 export default postDex
