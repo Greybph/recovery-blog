@@ -4,6 +4,7 @@ import subscribeUser from '../utils/subscribeUser.server'
 import EndCTA from '../components/blog/EndCTA'
 import submitQuestion from '~/utils/submitQuestion.server'
 import PostAuthor from '../components/blog/PostAuthor'
+import SocialShare from '~/components/utility/SocialShare'
 
 export const meta = () => {
   return {
@@ -33,6 +34,7 @@ export async function action({request}){
       <main className='flex justify-center px-4 md:px-0 lg:mt-20'>
         <article className='overflow-x-hidden prose py-28 prose-img:rounded-lg prose-a:text-blue-600 prose-slate lg:prose-xl'>
           <Outlet />
+          {/* <SocialShare /> */}
           <PostAuthor /> 
         </article>
       </main>
