@@ -39,13 +39,6 @@ function PostsSection({filter= "all"}) {
   }, [category])
 
   useEffect(() => {
-    gsap.to('#dice-icon', {
-      rotate: 360,
-      scale: 2,
-    })
-  }, [])
-
-  useEffect(() => {
     gsap.from(`#cb-${category}`, {y: 20, duration: 0.3, stagger: 0.1})
   }, [category])
 
@@ -53,14 +46,25 @@ function PostsSection({filter= "all"}) {
     setRandomPostPath(posts[Math.floor(Math.random() * posts.length)].to)
   }, [posts, category])
 
+  const handleShuffle = () => {
+    let fx = document.getElementById('shuffle-fx')
+    fx.volume = 0.1
+    fx.play()
+    setShuffle(true)
+  }
+  useEffect(() => {
+
+  })
+
   return (
     <main className='px-4 pb-20 md:px-10 lg:px-28 xl:px-32'>
+      <audio id="shuffle-fx" src="https://res.cloudinary.com/recovery-ocean/video/upload/v1657142304/shuffle-fx_mp3cut.net_i5ne5p.mp3"></audio>
       <div className="flex mb-4 space-x-4 md:justify-center md:-mt-8 lg:justify-start lg:-mt-10">
-        <button title="shuffle" aria-label="shuffle posts" onClick={() => setShuffle(true)} className="p-2 duration-100 border rounded-md shadow-md lg:hover:scale-105">
+        <button title="shuffle" aria-label="shuffle posts" onClick={handleShuffle} className="p-2 duration-100 border rounded-md shadow-md lg:hover:scale-105">
           <BsShuffle className="text-2xl text-blue-500 lg:text-2xl" />
         </button>
         <Link to={randomPostPath} id="dice-container" title="random" aria-label="random post" className={`${transition.state === 'loading' && transition.location.pathname === randomPostPath ? 'animate-spin' : '' } p-2 duration-100 rounded-md lg:hover:scale-105`}>
-          <GiPerspectiveDiceSixFacesRandom id="dice-icon" className=' text-2xl text-blue-500 lg:text-2xl scale-0' />
+          <GiPerspectiveDiceSixFacesRandom id="dice-icon" className='text-2xl text-blue-500 scale-[2]' />
         </Link>
       </div>
       
