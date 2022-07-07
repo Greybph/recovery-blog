@@ -7,7 +7,7 @@ import {gsap} from 'gsap'
 
 function SubscriblePopup() {
   const fetcher = useFetcher()
-  const path = useLocation().pathname.split("/")[2]
+  const path = useLocation().pathname
   const [showPopup, setShowPopup] = useState(false)
   const [closePopup, setClosePopup] = useState(false)
   const [didSubscribe, setDidSubscribe] = useState(false)
