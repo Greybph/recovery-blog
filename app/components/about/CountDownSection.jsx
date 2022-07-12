@@ -6,7 +6,7 @@ import {ScrollTrigger} from 'gsap/dist/ScrollTrigger'
 gsap.registerPlugin(ScrollTrigger)
 
 function CountDownSection() {
-  const countDownDate = new Date("July 11, 2022 24:00:00").getTime()
+  const countDownDate = new Date("July 11, 2023 24:00:00").getTime()
   const getTimeLeft = useCallback(() => {
     const now = new Date().getTime()
     const distance = countDownDate - now
@@ -74,7 +74,7 @@ function CountDownSection() {
     <section className='flex flex-col items-center justify-between px-4 py-10 md:pt-28 md:pb-20 lg:pt-32 lg:pb-24 bg-gradient-to-b from-slate-900 to-slate-600 font-mont'>
       
       <div className='mb-6 md:mb-10'>
-        <span id="countdown-section-title" className='block text-xl font-bold tracking-tighter text-center text-white md:text-4xl lg:text-4xl'>Countdown to 4 Years Clean</span>
+        <span id="countdown-section-title" className='block text-xl font-bold tracking-tighter text-center text-white md:text-4xl lg:text-4xl'>Countdown to 5 Years Clean</span>
       </div>
 
       <div id="countdown-container" className='flex items-center space-x-4 text-white md:space-x-8 lg:space-x-10'>
